@@ -1,0 +1,159 @@
+body, p, ul, li, form, input, td, tr, table, thead, tbody, h1, h2, h3, h4, h5, h6, label,a{
+	line-height:1;margin:0;padding:0;color:#000;font:1em sans-serif;border:none;
+}
+body{
+	background:#eee;
+	min-width:34em;
+	}
+
+/* navigation */
+#nav{
+	width:100%;
+	height:2em;
+	background:#333;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#626262), color-stop(0.5, #202020), color-stop(0.5, black), to(black));
+	background: -moz-linear-gradient(#626262, #202020 50%, black 50%, black);
+}
+#nav li{
+	list-style:none;
+	float:left;
+}
+#nav a{
+	font-weight:bold;
+	line-height:1em;
+	text-decoration:none;
+	display:block;
+	padding:.5em 1em;
+	background:#333;
+	color:#fff;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#626262), color-stop(0.5, #202020), color-stop(0.5, black), to(black));
+	background: -moz-linear-gradient(#626262, #202020 50%, black 50%, black);
+	text-shadow:0px -1px 1px #000;
+	
+}
+#nav a:hover{
+	background:#194BC8;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(100,200,225,1)), color-stop(0.5, rgba(50,75,200,1)), color-stop(0.5, rgba(25,75,225,1)), to(rgba(25,75,225,1)));
+	background: -moz-linear-gradient(rgba(100,200,225,1), rgba(50,75,200,1) 50%, rgba(25,75,225,1) 50%, rgba(25,75,225,1));
+}
+#nav a:active{
+}
+#nav a#here{
+	background:#194BC8;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(100,200,225,1)), color-stop(0.5, rgba(50,75,200,1)), color-stop(0.5, rgba(25,75,225,1)), to(rgba(25,75,225,1)));
+	background: -moz-linear-gradient(rgba(100,200,225,1), rgba(50,75,200,1) 50%, rgba(25,75,225,1) 50%, rgba(25,75,225,1));
+}
+#nav #logout, #nav #login{
+	float:right;
+}
+
+/* admin */
+form#admin,form#login {
+	margin:1em;
+	width:31em;
+}
+label{
+	display:block;
+	font-size:1.5em;
+	color:#555;
+	float:left;
+	clear:both;
+	width:5em;
+	padding:2px;
+	margin:0 1em .5em 0;
+	text-align:right;
+}
+#name, #password{
+	display:block;
+	font-size:1.5em;
+	border-radius:1em;
+	-moz-border-radius:1em;
+	-webkit-border-radius:1em;
+	padding:0 .5em;
+	width:13em;
+	margin:0 0 .5em 0;
+	border:2px solid #888;
+	background:#eee;
+	color:#444;
+}
+#name:focus, #password:focus{
+	border:2px solid #5364FF;
+	outline:none;
+}
+#submit{
+	background:#444;
+	color:#fff;
+	border-radius:1em;
+	-moz-border-radius:1em;
+	-webkit-border-radius:1em;
+	padding:.3em .5em;
+	font-size:1.3em;
+	text-shadow:0 -1px 1px #000;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#626262), color-stop(0.5, #202020), color-stop(0.5, black), to(black));
+	background: -moz-linear-gradient(#626262, #202020 50%, black 50%, black);
+	display:block;
+	clear:both;
+	margin-top:.2em;
+}
+#submit:hover{
+	background:#194BC8;
+	color:#fff;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(100,200,225,1)), color-stop(0.5, rgba(50,75,200,1)), color-stop(0.5, rgba(25,75,225,1)), to(rgba(25,75,225,1)));
+	background: -moz-linear-gradient(rgba(100,200,225,1), rgba(50,75,200,1) 50%, rgba(25,75,225,1) 50%, rgba(25,75,225,1));
+}
+#submit:active{
+	background: -webkit-gradient(linear, 100% 0%, 0% 0%, from(rgba(100,200,225,1)), color-stop(0.5, rgba(50,75,200,1)), color-stop(0.5, rgba(25,75,225,1)), to(rgba(25,75,225,1)));
+	background: -moz-linear-gradient(90deg, rgba(100,200,225,1), rgba(50,75,200,1) 50%, rgba(25,75,225,1) 50%, rgba(25,75,225,1));
+}
+table#users{
+	width:100%;
+	border-collapse:collapse;
+}
+table#users thead tr{
+	height:4em;
+}
+table#users tr{
+	border-bottom:1px solid rgba(0,0,0,.1);
+}
+table#users td{
+	color:#111;
+	padding:.5em;
+	width:auto;
+}
+table#users tr.odd{
+	background:rgba(0,0,0,.08);
+}
+
+table#users a{
+	color:#222;
+	display:block;
+	text-decoration:none;
+}
+table#users a:hover{
+	color:#FF0903;
+}
+col.time{
+width:5em;
+}
+
+/*editor */
+form#comment{
+margin:0;
+}
+form#comment #submit{
+margin:.5em
+}
+textarea{
+	color:#222;
+	background:#eee;
+	width:20em;
+	height:10em;
+	margin:1em;
+	border:1px solid #777;
+	-webkit-box-shadow:1px 0 7px #000;
+	padding:.5em;
+	font:1em sans-serif;
+}
+textarea:focus{
+	outline:none;
+}

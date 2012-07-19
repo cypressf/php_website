@@ -1,0 +1,248 @@
+body, p, ul, li, form, input, td, tr, table, thead, tbody, h1, h2, h3, h4, h5, h6, label,a{
+	line-height:1;margin:0;padding:0;color:#000;font:1em sans-serif;border:none;
+}
+li{list-style:none;}
+body{
+	background:#eee;
+	min-width:34em;
+}
+
+/* navigation */
+#nav{
+	width:100%;
+	height:2em;
+	background:#333;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#626262), color-stop(0.5, #202020), color-stop(0.5, black), to(black));
+	background: -moz-linear-gradient(#626262, #202020 50%, black 50%, black);
+}
+#nav li{
+	list-style:none;
+	float:left;
+}
+#nav a, #nav #version{
+	font-weight:bold;
+	line-height:1em;
+	text-decoration:none;
+	display:block;
+	padding:.5em 1em;
+	background:#333;
+	color:#fff;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#626262), color-stop(0.5, #202020), color-stop(0.5, black), to(black));
+	background: -moz-linear-gradient(#626262, #202020 50%, black 50%, black);
+	text-shadow:0px -1px 1px #000;	
+}
+#nav a:hover{
+	background:#194BC8;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(100,200,225,1)), color-stop(0.5, rgba(50,75,200,1)), color-stop(0.5, rgba(25,75,225,1)), to(rgba(25,75,225,1)));
+	background: -moz-linear-gradient(rgba(100,200,225,1), rgba(50,75,200,1) 50%, rgba(25,75,225,1) 50%, rgba(25,75,225,1));
+}
+#nav a#here{
+	background:#194BC8;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(70,100,210,1)), color-stop(0.5, rgba(50,75,200,1)), color-stop(0.5, rgba(25,75,225,1)), to(rgba(25,75,225,1)));
+	background: -moz-linear-gradient(rgba(70,100,210,1), rgba(50,75,200,1) 50%, rgba(25,75,225,1) 50%, rgba(25,75,225,1));
+	box-shadow:inset 0 0 5px #000;
+	-moz-box-shadow:inset 0 0 5px #000;
+	-webkit-box-shadow:inset 0 0 5px #000;
+}
+#nav #logout, #nav #login{
+	float:right;
+}
+
+/* admin */
+form#signup,form#login,form#admin,form#settings {
+	margin:1em;
+	width:31em;
+}
+label{
+	display:block;
+	font-size:1.5em;
+	color:#555;
+	float:left;
+	clear:both;
+	width:5em;
+	padding:2px;
+	margin:0 1em .5em 0;
+	text-align:right;
+}
+#name, #password{
+	display:block;
+	font-size:1.5em;
+	border-radius:1em;
+	-moz-border-radius:1em;
+	-webkit-border-radius:1em;
+	padding:0 .5em;
+	width:13em;
+	margin:0 0 .5em 0;
+	border:2px solid #888;
+	background:#fff;
+	color:#444;
+}
+#recaptcha_response_field{
+	-moz-border-radius-bottomright:.5em;
+	-webkit-border-bottom-right-radius:.5em;
+	-moz-border-radius-bottomleft:.5em;
+	-webkit-border-bottom-left-radius:.5em;
+	padding:0 .4em;
+background:#fff;
+border: 2px solid #888;
+height: 57px;
+width:300px;
+font-family:serif;
+font-size:3em;
+}
+
+#name:focus, #password:focus,#recaptcha_response_field:focus{
+	border-color:#5364FF;
+	outline:none;
+}
+#submit{
+	background:#444;
+	color:#fff;
+	border-radius:1em;
+	-moz-border-radius:1em;
+	-webkit-border-radius:1em;
+	padding:.3em .5em;
+	font-size:1.3em;
+	text-shadow:0 -1px 1px #000;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#626262), color-stop(0.5, #202020), color-stop(0.5, black), to(black));
+	background: -moz-linear-gradient(#626262, #202020 50%, black 50%, black);
+	display:block;
+	clear:both;
+	margin-top:.2em;
+}
+#submit:hover{
+	background:#194BC8;
+	color:#fff;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(100,200,225,1)), color-stop(0.5, rgba(50,75,200,1)), color-stop(0.5, rgba(25,75,225,1)), to(rgba(25,75,225,1)));
+	background: -moz-linear-gradient(rgba(100,200,225,1), rgba(50,75,200,1) 50%, rgba(25,75,225,1) 50%, rgba(25,75,225,1));
+}
+#submit:active{
+	box-shadow:inset 0 0 10px #000;
+	-moz-box-shadow:inset 0 0 10px #000;
+	-webkit-box-shadow:inset 0 0 10px #000;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(70,100,210,1)), color-stop(0.5, rgba(50,75,200,1)), color-stop(0.5, rgba(25,75,225,1)), to(rgba(25,75,225,1)));
+	background: -moz-linear-gradient(rgba(70,100,210,1), rgba(50,75,200,1) 50%, rgba(25,75,225,1) 50%, rgba(25,75,225,1));
+	
+}
+table#users{
+	width:100%;
+	border-collapse:collapse;
+}
+table#users thead tr{
+	height:4em;
+}
+table#users tr{
+	border-bottom:1px solid rgba(0,0,0,.1);
+}
+table#users td{
+	color:#111;
+	padding:.5em;
+	width:auto;
+}
+table#users tr.odd{
+	background:rgba(0,0,0,.08);
+}
+
+table#users .controls{
+	border:1px solid rgba(0,0,0,.1);
+	float:right;
+	margin:0 0 0 .5em;
+	
+}
+table#users .controls li{
+	float:left;
+}
+table#users a{
+	color:rgba(0,0,0,.1);
+	padding:.3em .5em;
+	display:block;
+	text-decoration:none;
+}
+table#users td:hover .controls{
+	border-color:rgba(0,0,0,.7);
+}
+table#users td:hover a{
+	color:rgba(0,0,0,.7);
+}
+table#users a.delete:hover{
+	background:rgba(225,100,100,1);
+	color:rgba(100,0,0,1);
+}
+table#users a.edit:hover{
+	background:rgba(100,225,100,1);
+	color:rgba(0,100,0,1);
+}
+col.time{
+width:10em;
+}
+#recaptcha_image img{
+border:2px solid #888;
+padding:0 .4em;
+background:#fff;
+-moz-border-radius-topright:.5em;
+-webkit-border-top-right-radius:.5em;
+-moz-border-radius-topleft:.5em;
+-webkit-border-top-left-radius:.5em;
+font-size:3em;
+}
+
+/*editor */
+form#comment{
+margin:0;
+width:31em;}
+form#comment #submit{
+margin:1em 0;
+float:right;
+}
+form#comment textarea{
+	color:#222;
+	background:#eee;
+	width:20em;
+	height:2em;
+	margin:1em;
+	padding:.5em;
+	border:1px solid #999;
+	font:1em sans-serif;
+	overflow:hidden;
+	-webkit-box-shadow:inset 0 0 0px #000;
+	-moz-box-shadow:inset 0 0 0px #000;
+	-webkit-transition: all .1s linear;
+}
+form#comment textarea:focus{
+	-webkit-transition: all .1s linear;
+	height:10em;
+	border:1px solid #777;
+	-webkit-box-shadow:inset 1px 0 7px #000;
+	-moz-box-shadow:inset 1px 0 7px #000;
+	overflow:auto;
+}
+
+form#editcomment textarea{
+	color:#222;
+	background:#eee;
+	width:20em;
+	padding:.5em;
+	height:10em;
+	border:1px solid #777;
+	font:1em sans-serif;
+	-webkit-box-shadow:inset 1px 0 7px #000;
+	-moz-box-shadow:inset 1px 0 7px #000;
+	overflow:auto;
+}
+form#editcomment #submit{
+}
+textarea:focus{
+	outline:none;
+}
+#alert{
+background:#000;
+color:#fff;
+padding:1em;
+margin:.5em;	
+}
+#alert a{
+color:#fff;
+}
+#alert a:hover{
+	background:#242F99;
+}
